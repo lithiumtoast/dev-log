@@ -173,8 +173,13 @@ I like doing this because I can always find the latest build NuGet packages rega
 <PropertyGroup>
     <IsPackable>false</IsPackable>
     <PackageOutputPath>$(RepositoryPath)nupkg</PackageOutputPath>
-    <IncludeSymbols>false</IncludeSymbols>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
 </PropertyGroup>
-```    
+```
+
+Changing the `IsPackable` property to `true` allows projects to be packed into packages. I usually use a default of `false` and change the property to `true` in each `.csproj` to optionally opt-in per project.  
+Changing the `IncludeSymbols` to `false` prevents creating packages with symbol information which are used for debugging purposes. I usually use a default of `true` because I want debug symbols for all my NuGet packages so others (including myself!) can step in with a debugger to code in a NuGet package.  
+The `SymbolPackageFormat` property is the file extension (without the `.`) of the package including symbols.
 
 
