@@ -172,7 +172,7 @@ I like doing this because I can always find the latest build NuGet packages rega
 ```xml
 <PropertyGroup>
     <IsPackable>false</IsPackable>
-    <PackageOutputPath>$(RepositoryPath)nupkg</PackageOutputPath>
+    <PackageOutputPath>$(GitRepositoryPath)nupkg</PackageOutputPath>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
 </PropertyGroup>
