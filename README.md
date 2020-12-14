@@ -1,6 +1,6 @@
 # dev-log
 
-My personal (`lithiumtoast`) dev-log (blog) of work I do on my personal time.
+My personal ([`lithiumtoast`](https://github.com/lithiumtoast/lithiumtoast)) dev-log (blog) of work I do on my personal time.
 
 ## Latest
 
