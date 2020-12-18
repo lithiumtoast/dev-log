@@ -1,6 +1,6 @@
 # Dev-log: December 13th 2020
 
-## Extending MSBuild
+## Extending MSBuild (Part 1)
 
 In 2020 I got tired of my `.csproj` files having duplicated configurations. So I was exploring how to share common `ItemGroup`, `PropertyGroup`, and other definitions between multiple `.csproj` files.
 
