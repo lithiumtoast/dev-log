@@ -130,7 +130,7 @@ So how does this work? If we take a look at `/ProjectD/obj/ProjectD/csproj.nuget
 </ImportGroup>
 ```
 
-This means that the problem we discussed in [part 1](2020-12-13-extending-msbuild-part-1.md) about `BaseIntermediateOutputPath` is still relevant to `.props` and `.targets` in NuGet packages. We can't easily 100% extend MSBuild for a C# project through NuGet packages as one may wish. So because of this, and [among other reasons](2020-12-18-dont-use-nuget-packages.md), I don't recommend distributing your `.props` and `.targets` via NuGet packages. Instead, I recommend Git submodules or simply coping the files over directly.
+This means that the problem we discussed in [part 1](2020-12-13-extending-msbuild-part-1.md) about `BaseIntermediateOutputPath` is still relevant to `.props` and `.targets` in NuGet packages. We can't easily 100% extend MSBuild for a C# project through NuGet packages as one may wish. So because of this, and [among other reasons](2020-12-19-dont-use-nuget-packages.md), I don't recommend distributing your `.props` and `.targets` via NuGet packages. Instead, I recommend Git submodules or simply coping the files over directly.
 
 
 
